@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ticket</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="masthead bg-dark text-white text-center " id="about">
+    <div class="container d-flex align-items-center flex-column ">
+      <br>
+      <h1 class="masthead-heading  mb-2">IBM</h1>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./logo IBM.svg" alt="" width="40" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">photos & videos</a></li>
+              <li><a class="dropdown-item" href="#">Tecnological experiences</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">technological alliances</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">contact us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <form class="row g-3 needs-validation" novalidate="" id="createform"
+    style="margin-top:50px; padding-left: 50px; padding-right: 50px;">
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">Name</label>
+      <input type="text" class="form-control" id="inputName" value="" required>
+      <div class="valid-feedback">
+
+      </div>
+    </div>
+
+    <div class="col-md-4" style="width: 300px;">
+      <label for="validationCustom03" class="form-label">DNI</label>
+      <input type="text" class="form-control" id="inputDNI" required>
+      <div class="invalid-feedback">
+        Please provide a valid DNI.
+      </div>
+
+    </div>
+    <div class="col-md-3">
+      <h6><label for="validationCustom04" class="form-label">Technological position</label></h6> 
+      <select class="form-" id="validationCustom04" required>
+        <option value="Backend Developer">Backend Developer</option>
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="DevOps">DevOps</option>
+        <option value="Linux Administrator">Linux Administrator</option>
+        <option value="IT Infrastructure Engineer">IT Infrastructure Engineer</option>
+        <option value="Sys Admin">Sys Admin</option>
+        </option>
+      </select>
+
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1"> Date</span>
+      <input type="date" class="form-control" aria-label="Username" aria-describedby="basic-addon1" id="date">
+    </div>
+
+
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">Tribuna</label>
+      <select class="form-" id="Tribuna" required>
+        <option value="Oriental baja">Oriental baja</option>
+        <option value="Oriental alta">Oriental alta</option>
+        <option value="occidental alta">occidental alta</option>
+        <option value="occidentalbbaja">occidental baja</option>
+        <option value="norte alta">norte alta</option>
+        <option value="norte baja">norte baja</option>
+        <option value="sur alta ">sur alta</option>
+        <option value="sur baja">sur baja</option>
+        </option>
+      </select>
+      <div class="navbar navbar-light bg-transparent">
+        <a class="navbar-brand" href="#">
+          <img src="./logo IBM.svg" width="40" height="40" alt="">
+        </a>
+      </div>
+  </form>
+  <div class="d-grid gap-2" style="margin-top:50px; padding-left: 50px; padding-right: 50px;">
+    <button class="btn btn-primary" id="My-Button" type="submit">Get ticket</button>
+    <button class="btn btn-primary" id="My-Button" type="reset">Clean</button>
+    <button onclick = "mostrarAlertaPorcentajes()" class="btn btn-success">ver  %</button>
+
+  </div>
+
+  <br>
+  <form>
+    
+    <form class="row g-3 needs-validation" novalidate="" style="margin-top:50px; padding-left: 50px; padding-right: 50px;">
+    
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+     
+      <div class="navbar navbar-light bg-transparent">
+        <a class="navbar-brand" href="#">
+          <img src="./logo IBM.svg" width="40" height="40" alt="">
+        </a>
+      </div>
+      </div>
+
+
+    </form>
+    <div class="container" id="ticket">
+       
+    </div>
+  </form>
+  <script src="./jquery-3.6.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+  <script type="text/javascript"></script>
+</body>
+
+</html>
